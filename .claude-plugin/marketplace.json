@@ -1,0 +1,16 @@
+{
+  "name": "zolkyed",
+  "owner": {
+    "name": "Zolkyed"
+  },
+  "description": "Zolkyed's agent skills, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "zolkyed-skills",
+      "source": "./",
+      "description": "Custom agent skills for engineering and productivity workflows.",
+      "category": "engineering",
+      "keywords": ["engineering", "skills"]
+    }
+  ]
+}
