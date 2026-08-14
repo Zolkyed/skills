@@ -1,8 +1,12 @@
 # skills
 
+**GitHub:** [github.com/Zolkyed/skills](https://github.com/Zolkyed/skills)
+
 Zolkyed's agent skills — install into any coding agent that supports the [skills](https://skills.sh) ecosystem (Claude Code, Codex, Cursor, GitHub Copilot, and 70+ more).
 
-Most skills here started as a copy of [mattpocock/skills](https://github.com/mattpocock/skills) (MIT — see `THIRD_PARTY_NOTICES.md`), meant to be customized, not used verbatim forever.
+## Source
+
+Most skills under `skills/engineering/`, `skills/productivity/`, and `skills/misc/` (everything except `skills/engineering/example-skill/`, which is original) started as a copy of [mattpocock/skills](https://github.com/mattpocock/skills), MIT licensed. Copied as a base to customize, not used verbatim forever — see `THIRD_PARTY_NOTICES.md` for the full license text and what was and wasn't copied.
 
 ## Install
 
