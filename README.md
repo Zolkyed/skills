@@ -2,7 +2,7 @@
 
 **GitHub:** [github.com/Zolkyed/skills](https://github.com/Zolkyed/skills)
 
-Zolkyed's agent skills — install into any coding agent that supports [skills.sh](https://skills.sh) (Claude Code, Codex, Copilot, OpenCode, 70+ more).
+Zolkyed's personal agent skills — install into any coding agent that supports [skills.sh](https://skills.sh) (Claude Code, Codex, Copilot, OpenCode, 70+ more).
 
 ## Install
 
@@ -12,19 +12,12 @@ npx skills add Zolkyed/skills --list       # list without installing
 /plugin install zolkyed-skills             # Claude Code plugin, whole set
 ```
 
-Get Matt Pocock's current skills too, independently — no fork, no sync, always fresh:
-
-```bash
-npx skills add mattpocock/skills
-```
-
 ## Structure
 
 ```text
 skills/
-├── engineering/    # code-review, tdd, diagnosing-bugs, to-spec, wayfinder, ...
-├── productivity/    # grill-me, handoff, teach, writing-for-agents, ...
-└── misc/           # git-guardrails-claude-code, setup-pre-commit, ...
+└── design/
+    └── frontend-design/
 ```
 
 `skills/<category>/<skill-name>/SKILL.md` — YAML frontmatter (`name`, `description`) + process. The `description` is what an agent uses to decide *when* to reach for it, not just what it does.
