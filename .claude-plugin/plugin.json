@@ -6,6 +6,13 @@
     "name": "Zolkyed"
   },
   "license": "MIT",
-  "keywords": ["design", "skills"],
-  "skills": ["./skills/design/frontend-design"]
+  "keywords": ["design", "engineering", "productivity", "skills"],
+  "skills": [
+    "./skills/design/frontend-design",
+    "./skills/engineering/improve-codebase-architecture",
+    "./skills/engineering/skill-creator",
+    "./skills/productivity/caveman",
+    "./skills/productivity/find-skills",
+    "./skills/productivity/grill-me"
+  ]
 }
