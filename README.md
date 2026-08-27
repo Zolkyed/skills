@@ -16,15 +16,40 @@ npx skills add Zolkyed/skills --list       # list without installing
 
 ```text
 skills/
-├── design/
-│   └── frontend-design/
-├── engineering/
+├── coding/
+│   ├── code-review/
+│   ├── codebase-design/
+│   ├── create-issue/
+│   ├── diagnosing-bugs/
+│   ├── finish-issue/
 │   ├── improve-codebase-architecture/
-│   └── skill-creator/
-└── productivity/
-    ├── caveman/
-    ├── find-skills/
-    └── grill-me/
+│   ├── prepare-pr/
+│   ├── retry-issue/
+│   ├── skill-creator/
+│   ├── start-issue/
+│   └── tdd/
+├── cybersecurity/
+│   ├── assess-web-application-vulnerabilities/
+│   ├── audit-dependency-vulnerabilities/
+│   ├── detect-exposed-secrets/
+│   ├── review-source-vulnerabilities/
+│   └── secure-software-engineering/
+├── productivity/
+│   ├── caveman/
+│   ├── find-skills/
+│   └── grill-me/
+├── web-scraping/
+│   ├── crawl-large-sites/
+│   ├── extract-structured-data/
+│   ├── map-website-apis/
+│   ├── scrape-browser-sites/
+│   └── scrape-static-sites/
+└── webdev/
+    ├── accessibility/
+    ├── frontend-design/
+    ├── frontend-engineering/
+    ├── playwright/
+    └── prototype/
 ```
 
 `skills/<category>/<skill-name>/SKILL.md` — YAML frontmatter (`name`, `description`) + process. The `description` is what an agent uses to decide *when* to reach for it, not just what it does.
