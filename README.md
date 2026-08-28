@@ -39,9 +39,14 @@ skills/
 │   ├── find-skills/
 │   └── grill-me/
 ├── web-scraping/
+│   ├── authenticated-http-request/
 │   ├── crawl-large-sites/
+│   ├── diagnose-scraper-failure/
+│   ├── discover-pagination-flow/
+│   ├── extract-embedded-web-state/
 │   ├── extract-structured-data/
 │   ├── map-website-apis/
+│   ├── minimize-http-request/
 │   ├── scrape-browser-sites/
 │   └── scrape-static-sites/
 └── webdev/
