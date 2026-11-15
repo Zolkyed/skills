@@ -40,6 +40,7 @@ npx skills add Zolkyed/skills
 | `wizard` | auto | Interactive bash wizard for steps only a human can perform. |
 | `ask-matt` | manual | Router: which skill or flow fits your situation. |
 
-Based on [mattpocock/skills](https://github.com/mattpocock/skills) (MIT), engineering skills only.
+## References
 
-`verification-before-completion` is from [obra/superpowers](https://github.com/obra/superpowers) (MIT, Copyright (c) 2025 Jesse Vincent); its license is included in that skill's folder.
+- [mattpocock/skills](https://github.com/mattpocock/skills): the engineering skills (MIT, see `LICENSE`)
+- [obra/superpowers](https://github.com/obra/superpowers): `verification-before-completion` (MIT, Copyright (c) 2025 Jesse Vincent, license included in that skill's folder)
