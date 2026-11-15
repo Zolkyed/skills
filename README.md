@@ -10,7 +10,10 @@ npx skills add Zolkyed/skills
 
 ## Skills
 
-**Mode:** `manual` = only runs when you type it, `auto` = the model can also trigger it.
+**Mode:**
+
+- `manual`: only runs when you type it
+- `auto`: the model can also trigger it
 
 | Skill | Mode | What it does |
 |---|---|---|
