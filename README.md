@@ -42,5 +42,5 @@ npx skills add Zolkyed/skills
 
 ## References
 
-- [mattpocock/skills](https://github.com/mattpocock/skills): the engineering skills (MIT, see `LICENSE`)
-- [obra/superpowers](https://github.com/obra/superpowers): `verification-before-completion` (MIT, Copyright (c) 2025 Jesse Vincent, license included in that skill's folder)
+- [mattpocock/skills](https://github.com/mattpocock/skills)
+- [obra/superpowers](https://github.com/obra/superpowers)
