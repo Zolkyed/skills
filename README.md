@@ -38,9 +38,11 @@ npx skills add Zolkyed/skills
 | `prototype` | auto | Throwaway prototype (HTML logic demo or UI variants) on a throwaway branch. |
 | `wayfinder` | manual | Map a huge effort as decision tickets, resolve them one by one. |
 | `wizard` | auto | Interactive bash wizard for steps only a human can perform. |
+| `herdr` | auto | Drive Herdr panes, tabs and agents through its CLI (only inside Herdr). |
 | `ask-matt` | manual | Router: which skill or flow fits your situation. |
 
 ## References
 
 - [mattpocock/skills](https://github.com/mattpocock/skills)
 - [obra/superpowers](https://github.com/obra/superpowers)
+- [herdrdev/herdr](https://github.com/herdrdev/herdr)
