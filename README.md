@@ -1,5 +1,7 @@
 # skills
 
+![Workflow des skills - Engineering](./assets/workflow.png)
+
 Agent skills, installable with the [skills CLI](https://github.com/vercel-labs/skills):
 
 ```
