@@ -1,0 +1,169 @@
+/*
+  Dark showcase tokens, Tailwind v4 syntax.
+  For Tailwind v3: move the colors and fonts into tailwind.config `theme.extend`
+  and turn each @utility into a class inside `@layer utilities { ... }`.
+*/
+@import 'tailwindcss';
+@import '@fontsource-variable/nunito';
+/* display face: swap for Molot or another heavy geometric font */
+@import '@fontsource/russo-one';
+
+:root {
+	--foreground: 0 0% 98%;
+	--muted-foreground: 240 5% 64.9%;
+	--border: 240 3.7% 15.9%;
+	--ring: 240 4.9% 83.9%;
+	--accent: #fa68b6; /* the one accent: signature icon, selection; change the hue, keep it the only one */
+	--glow: #ff00b6; /* more saturated sibling of the accent, only ever used at ~15% alpha */
+}
+
+@theme inline {
+	--color-foreground: hsl(var(--foreground));
+	--color-muted-foreground: hsl(var(--muted-foreground));
+	--color-border: hsl(var(--border));
+	--color-ring: hsl(var(--ring));
+	--color-accent: var(--accent);
+	--font-sans: 'Nunito Variable', ui-sans-serif, system-ui, sans-serif;
+	--font-display: 'Russo One', sans-serif;
+}
+
+@layer base {
+	* {
+		border-color: var(--color-border);
+	}
+	html,
+	body {
+		background: #000;
+		overflow-x: clip; /* glows bleed past the edges; html needs it too or phones scroll sideways */
+	}
+	body {
+		margin: 0;
+		color: var(--color-foreground);
+		font-family: var(--font-sans);
+		color-scheme: dark;
+		overflow-x: clip;
+	}
+	::selection {
+		background: color-mix(in srgb, var(--accent) 33%, transparent);
+	}
+	*::-webkit-scrollbar {
+		display: none;
+	}
+	* {
+		scrollbar-width: none;
+	}
+}
+
+/* 1px divider that fades out at both ends; pair with border-t / border-l */
+@utility border-gradient {
+	border-image-source: linear-gradient(90deg, #0000 14%, #38393c, #0000 86%);
+	border-image-slice: 1;
+}
+
+/* soft ambient light behind the hero */
+/* place at a screen corner, mostly off-screen: class="glow absolute top-0 right-0 size-[800px] translate-x-[70%] -translate-y-[60%] pointer-events-none" */
+@utility glow {
+	background-image: radial-gradient(
+		circle farthest-side,
+		color-mix(in srgb, var(--glow) 15%, transparent),
+		#fff0
+	);
+}
+
+/* black fades over the edges of marquees and media */
+@utility fade-x {
+	background: linear-gradient(90deg, #000, #0000 25% 75%, #000);
+}
+@utility fade-y {
+	background: linear-gradient(0deg, #000, #0000 25% 75%, #000);
+}
+
+/* giant outline word behind a headline */
+@utility ghost {
+	/* fill with the page colour, outline with a hairline; a text-shadow would fill the glyphs */
+	color: #000;
+	-webkit-text-stroke: 1px #3a3a3a;
+}
+
+/* tiny gray bullet between meta spans: <div class="meta"><span>App</span><span>2026</span></div> */
+.meta span + span::before {
+	content: '•';
+	padding: 0 0.3rem;
+	font-size: 0.4rem;
+	vertical-align: middle;
+	color: #737373;
+}
+
+/* press feedback on everything interactive */
+:where(a[href], button, summary, [role='button'], input, select, textarea, [tabindex]):active:not(
+		[disabled],
+		[type='range'],
+		.no-scale,
+		[tabindex='-1']
+	) {
+	transition: transform 0.1s ease-in-out;
+	transform: scale(0.98);
+}
+
+/* focus = soft gray fill instead of a coloured ring */
+:focus-visible {
+	outline: none;
+	border-image: fill 0 linear-gradient(#8883, #8883);
+}
+
+/* hover = focus = press, as one variant: class="select:bg-neutral-900" */
+@custom-variant select (&:hover, &:focus-visible, &:active);
+
+/* short entrance for dynamic items */
+@keyframes load-in {
+	from {
+		transform: translateY(1.2rem) scale(0.95);
+	}
+}
+.load-in {
+	animation: load-in 0.3s ease;
+}
+
+/* signature icon heartbeat (one per page) */
+@keyframes heartbeat {
+	to {
+		transform: scale(0.85);
+	}
+}
+.signature {
+	color: var(--accent);
+	filter: drop-shadow(0 0 1rem var(--accent));
+	animation: heartbeat 1s ease-in-out infinite alternate;
+}
+
+/* slight skew for a screenshot collage */
+@utility skew-3d {
+	transform: matrix(1, 0, -0.05, 1, 0, 0);
+}
+
+/* scroll reveal: add .shown with an IntersectionObserver */
+.reveal {
+	opacity: 0;
+	transform: translateY(1.5rem);
+	transition:
+		opacity 0.7s ease,
+		transform 0.7s ease;
+}
+.reveal.shown {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.001s !important;
+		animation-iteration-count: 1 !important;
+	}
+}
