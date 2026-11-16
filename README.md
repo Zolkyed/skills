@@ -47,3 +47,4 @@ npx skills add Zolkyed/skills
 - [mattpocock/skills](https://github.com/mattpocock/skills)
 - [obra/superpowers](https://github.com/obra/superpowers)
 - [herdrdev/herdr](https://github.com/herdrdev/herdr)
+- [hayase-app/website](https://github.com/hayase-app/website) (style reference for `dark-showcase`)

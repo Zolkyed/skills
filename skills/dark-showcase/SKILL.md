@@ -9,7 +9,7 @@ This skill is about **how things look**, not where they go. Keep the existing la
 
 The style looks expensive because almost everything is silent. Black background, white and gray text, one faint glow. The richness goes into the content itself (media, screenshots, data), never into the chrome.
 
-Write the code yourself from these rules. Take the look from the sites that inspired it, not their source.
+Reference: the style is modelled on [hayase.watch](https://hayase.watch/) ([hayase-app/website](https://github.com/hayase-app/website)). That code is under the Business Source License, so write the code yourself from these rules: take the look, not the source.
 
 ## The style rules
 
