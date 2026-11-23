@@ -1,0 +1,3 @@
+interface:
+  display_name: "Guardrails"
+  short_description: "Stop hook for checks plus destructive-command deny rules"

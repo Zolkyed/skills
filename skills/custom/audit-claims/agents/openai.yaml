@@ -1,0 +1,3 @@
+interface:
+  display_name: "Audit Claims"
+  short_description: "Verify claims about code with file:line evidence"

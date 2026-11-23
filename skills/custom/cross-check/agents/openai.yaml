@@ -1,0 +1,3 @@
+interface:
+  display_name: "Cross-Check"
+  short_description: "Blind second-model bug review of a diff"
