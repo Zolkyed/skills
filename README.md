@@ -8,6 +8,9 @@ npx skills add https://github.com/Zolkyed/skills/tree/main/skills/matt
 
 # pstack
 npx skills add https://github.com/Zolkyed/skills/tree/main/skills/pstack
+
+# Custom
+npx skills add https://github.com/Zolkyed/skills/tree/main/skills/custom
 ```
 
 ## MCP
