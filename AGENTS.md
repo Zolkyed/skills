@@ -6,13 +6,13 @@ Make small, clear changes that fit the surrounding project. Use these rules for 
 
 - Questions are requests for answers, not changes. Make changes only when I directly ask or approve them.
 - Use judgment for trivial tasks; scale planning and verification to the change.
-- Before non-trivial work, identify assumptions and clarify only decisions that materially affect the implementation. Use reasonable defaults for everything else.
+- Before non-trivial work, identify assumptions and clarify only decisions that materially affect the result. Use reasonable defaults for everything else.
 - Push back on unnecessary complexity.
 
 ## 2. Keep Changes Focused
 
 - Make the smallest change that solves the request. Avoid speculative features and unrelated cleanup.
-- Match the project's existing style and conventions.
+- Follow repository formatting and lint rules when defined; otherwise match surrounding conventions.
 - Avoid unnecessary abstractions and complexity.
 - Prefer extending existing project patterns over introducing parallel systems.
 - Avoid adding dependencies unless the request requires them.
@@ -31,9 +31,9 @@ Make small, clear changes that fit the surrounding project. Use these rules for 
 - Lead with the result. Keep explanations and replies direct.
 - Make important assumptions and decisions visible; say when confidence is limited.
 - When files changed, end with a status line:
-  - 🟢 relevant checks passed; no behavior changed
-  - 🟡 behavior or output changed
-  - 🔴 incomplete, unverified, or requires user review
+  - 🟢 Relevant checks passed; behavior unchanged.
+  - 🟡 Behavior changed; intended result verified.
+  - 🔴 Incomplete, unverified, or needs user review.
 
 ## 5. Use Available Skills
 
