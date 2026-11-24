@@ -58,6 +58,7 @@ The test: Every changed line traces directly to the request.
   2. [Step] → verify: [check]
   ```
 - Before claiming done, follow `verification-before-completion`.
+- Before committing, run `deslop` on the diff.
 - Mark each claim about the code as confirmed (read, ran, grepped) or inferred.
 
 ## 6. Report Plainly
@@ -69,3 +70,5 @@ The test: Every changed line traces directly to the request.
   - 🟢 nothing works differently · 🟡 behaviour changed · 🔴 needs my review
   - Give 🟢 only when the checks ran and passed. When unsure, pick the next colour up.
 - After non-trivial work, list the major decisions you made and why, then what you're least confident about.
+- Run commit messages, PR text and review replies through `unslop`.
+- When review feedback arrives, follow `receiving-code-review`.
