@@ -8,7 +8,7 @@ Rules for writing clean code: small, simple, verified, and in the style of the c
 
 **A question is a request for an answer, not a change.**
 
-- When I ask a question or think out loud, answer it. Change files only after I approve the approach.
+- When I ask a question or think out loud, answer it. Change files only after I approve the approach. An approved ticket or spec counts as approval.
 - Ask before pushing, deleting files or branches, running migrations, or adding dependencies.
 
 The test: Every file change follows an explicit go-ahead.
@@ -20,7 +20,7 @@ The test: Every file change follows an explicit go-ahead.
 For non-trivial work, before writing code:
 - Restate the task and list your assumptions, including what I haven't told you.
 - If the request could mean two things, give both readings and let me pick.
-- If a wrong guess would be costly, ask. For larger plans, use `grilling`.
+- If a wrong guess would be costly, ask. For larger plans, suggest `/grill-with-docs`.
 - If my plan is overcomplicated, say so. Disagreement is welcome.
 
 When designing:
@@ -69,4 +69,3 @@ The test: Every changed line traces directly to the request.
   - 🟢 nothing works differently · 🟡 behaviour changed · 🔴 needs my review
   - Give 🟢 only when the checks ran and passed. When unsure, pick the next colour up.
 - After non-trivial work, list the major decisions you made and why, then what you're least confident about.
-- Keep `NOTES.md` current during long tasks: goal, decisions and why, next steps.
