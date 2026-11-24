@@ -8,8 +8,9 @@ Rules for writing clean code: small, simple, verified, and in the style of the c
 
 **A question is a request for an answer, not a change.**
 
-- When I ask a question or think out loud, answer it. Change files only after I approve the approach. An approved ticket or spec counts as approval.
-- Ask before pushing, deleting files or branches, running migrations, or adding dependencies.
+- When I ask a question or think out loud, answer it. Change files only after I approve the approach. An approved ticket or spec, or a skill I invoke, counts as approval.
+- When a choice is mine to make (behaviour, scope, naming, trade-offs), put it to me with `decide`.
+- Ask before pushing, deleting files or branches, running migrations, or adding dependencies. Say when a deletion is something git cannot restore.
 
 The test: Every file change follows an explicit go-ahead.
 
@@ -51,14 +52,17 @@ The test: Every changed line traces directly to the request.
 
 **Define done up front. Prove it before saying it.**
 
-- Write a failing test and a one-screen plan before editing (`tdd`).
+- Behaviour change: write a one-screen plan, then load the `tdd` skill and watch the new test go red before writing the code.
+- Refactor: capture the program's output before the change and show it is identical after.
+- Bug or regression: load `diagnosing-bugs` before changing code.
 - For multi-step work, give each step a check:
   ```
   1. [Step] → verify: [check]
   2. [Step] → verify: [check]
   ```
+- Before building on findings from a subagent or a reviewer, check them with `audit-claims`.
 - Before claiming done, follow `verification-before-completion`.
-- Before committing, run `deslop` on the diff.
+- Before saying a change is ready to commit, run `deslop` on the diff.
 - Mark each claim about the code as confirmed (read, ran, grepped) or inferred.
 
 ## 6. Report Plainly
@@ -71,4 +75,9 @@ The test: Every changed line traces directly to the request.
   - Give 🟢 only when the checks ran and passed. When unsure, pick the next colour up.
 - After non-trivial work, list the major decisions you made and why, then what you're least confident about.
 - Run commit messages, PR text and review replies through `unslop`.
-- When review feedback arrives, follow `receiving-code-review`.
+- When review feedback arrives, including `/code-review` sub-agent reports, follow `receiving-code-review`.
+
+## 7. Skills by stage
+
+Feature, one session: `grill-with-docs` → `implement` → `pr`.
+Feature, several sessions: `grill-with-docs` → `to-spec` → `to-tickets` → `implement` → `pr`.
