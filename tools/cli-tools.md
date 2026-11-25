@@ -77,6 +77,7 @@
 | Tool | What it does | Replaces |
 |---|---|---|
 | `curl` | Make HTTP requests and test APIs from the shell | n/a |
+| `wget` | Download files and mirror sites from the shell | n/a |
 | `grpcurl` | Call gRPC services and list their methods from the shell | n/a |
 | `openssl` | Inspect certificates, test TLS connections, generate keys and hashes | n/a |
 | `mitmproxy` | Intercept, inspect and replay HTTP and HTTPS traffic from the command line | n/a |
