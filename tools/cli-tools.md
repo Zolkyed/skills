@@ -47,7 +47,6 @@
 |---|---|---|
 | `gh` | Repos, issues, PRs and branches from the shell | n/a |
 | GNU `parallel` | Run shell tasks concurrently | n/a |
-| `code` | VS Code CLI: open files at a line with `-g`, compare two files with `-d`, manage extensions with `--install-extension` and `--list-extensions` | n/a |
 
 ## AI coding agents
 
@@ -56,6 +55,13 @@
 | `claude` | Claude Code: run Anthropic's coding agent from the terminal. `-p` runs one prompt and exits, `--model` picks the model | n/a |
 | `opencode` | Run the open-source OpenCode coding agent with many model providers. `run` runs one prompt and exits, `-m provider/model` picks the model | n/a |
 | `copilot` | GitHub Copilot CLI: run GitHub's coding agent from the terminal. `-p` runs one prompt and exits, `--model` picks the model | n/a |
+
+## IDE
+
+| Tool | What it does | Replaces |
+|---|---|---|
+| `code` | VS Code CLI: open files at a line with `-g`, compare two files with `-d`, manage extensions with `--install-extension` and `--list-extensions` | n/a |
+| `code chat` | Send a prompt to the Copilot chat panel in VS Code. `-m` picks the mode, `-a` adds a file | n/a |
 
 ## Linting and checks
 
