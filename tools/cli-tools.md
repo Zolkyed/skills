@@ -15,6 +15,7 @@
 |---|---|---|
 | `jq` | Process JSON | n/a |
 | `yq` | Process YAML like `jq` does JSON | n/a |
+| `xmlstarlet` | Query, edit and validate XML files | n/a |
 | `sqlite3` | Query and inspect SQLite databases | n/a |
 
 ## Files and documents
