@@ -24,13 +24,15 @@
 | `pandoc` | Convert documents between Markdown, HTML, docx, PDF and other formats | n/a |
 | `7z` | Create and extract 7z, zip, tar and other archives | n/a |
 
-## Compilers and build tools
+## Runtimes and build tools
 
 | Tool | What it does | Replaces |
 |---|---|---|
 | `dotnet` | Build, run and test C#, F# and other .NET projects | n/a |
 | `node` | Run JavaScript and build Node.js projects | n/a |
+| `bun` | Run JS/TS and install packages | `node` or `npm` |
 | `python` | Run Python scripts and build Python projects | n/a |
+| `uv` | Run Python scripts and manage Python versions, environments and packages | `pip` |
 | `go` | Build, run and test Go projects | n/a |
 | `cargo` | Build, run and test Rust projects | n/a |
 | `javac` | Compile Java source code | n/a |
@@ -43,8 +45,6 @@
 | Tool | What it does | Replaces |
 |---|---|---|
 | `gh` | Repos, issues, PRs and branches from the shell | n/a |
-| `bun` | Run JS/TS and install packages | `node` or `npm` |
-| `uv` | Run Python scripts and manage Python versions, environments and packages | `pip` |
 | GNU `parallel` | Run shell tasks concurrently | n/a |
 
 ## Linting and checks
