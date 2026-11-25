@@ -40,11 +40,14 @@
 | `gcc` | Compile C and C++ code | n/a |
 | `cmake` | Generate build files for C and C++ projects | n/a |
 | `ninja` | Run builds that CMake generates | `make` |
+| `docker` | Build and run containers from the shell | n/a |
+| `podman` | Build and run containers without a background daemon | `docker` |
 
 ## Dev workflow
 
 | Tool | What it does | Replaces |
 |---|---|---|
+| `git` | Track changes, branch, commit and merge from the shell | n/a |
 | `gh` | Repos, issues, PRs and branches from the shell | n/a |
 | GNU `parallel` | Run shell tasks concurrently | n/a |
 
@@ -71,6 +74,8 @@
 | `actionlint` | Find mistakes in GitHub Actions workflow files | n/a |
 | `yamllint` | Find syntax errors and style problems in YAML files | n/a |
 | `hadolint` | Find mistakes and bad practice in Dockerfiles | n/a |
+| `eslint` | Find mistakes and style problems in JavaScript and TypeScript | n/a |
+| `prettier` | Format JavaScript, TypeScript, JSON, CSS, Markdown and other files | n/a |
 | `pre-commit` | Run linters and formatters on staged files before each commit | n/a |
 
 ## Cloud
