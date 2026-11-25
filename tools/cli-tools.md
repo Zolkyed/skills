@@ -82,6 +82,7 @@
 | `hadolint` | Find mistakes and bad practice in Dockerfiles | n/a |
 | `eslint` | Find mistakes and style problems in JavaScript and TypeScript | n/a |
 | `prettier` | Format JavaScript, TypeScript, JSON, CSS, Markdown and other files | n/a |
+| `buf` | Lint and format `.proto` files, catch breaking schema changes and generate protobuf code | `protoc` |
 | `pre-commit` | Run linters and formatters on staged files before each commit | n/a |
 
 ## Cloud
