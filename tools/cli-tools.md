@@ -85,6 +85,13 @@
 | `az` | Manage Azure resources, identities and subscriptions from the shell | n/a |
 | `aws` | Manage AWS resources, identities and services from the shell | n/a |
 
+## Secrets
+
+| Tool | What it does | Replaces |
+|---|---|---|
+| `bw` | Bitwarden CLI: read and manage vault items and passwords from the shell | n/a |
+| `keepassxc-cli` | KeePassXC CLI: read and manage entries in a KeePass database from the shell | n/a |
+
 ## Infrastructure as code
 
 | Tool | What it does | Replaces |
