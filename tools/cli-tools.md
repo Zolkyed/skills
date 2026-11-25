@@ -32,6 +32,7 @@
 | `dotnet` | Build, run and test C#, F# and other .NET projects | n/a |
 | `node` | Run JavaScript and build Node.js projects | n/a |
 | `bun` | Run JS/TS and install packages | `node` or `npm` |
+| `tsc` | Type-check TypeScript projects and compile them to JavaScript | n/a |
 | `python` | Run Python scripts and build Python projects | n/a |
 | `uv` | Run Python scripts and manage Python versions, environments and packages | `pip` |
 | `go` | Build, run and test Go projects | n/a |
@@ -40,6 +41,11 @@
 | `gcc` | Compile C and C++ code | n/a |
 | `cmake` | Generate build files for C and C++ projects | n/a |
 | `ninja` | Run builds that CMake generates | `make` |
+
+## Containers
+
+| Tool | What it does | Replaces |
+|---|---|---|
 | `docker` | Build and run containers from the shell | n/a |
 | `podman` | Build and run containers without a background daemon | `docker` |
 
